@@ -1,2 +1,2 @@
 # Dummy
-This is a description of the dummy package.1
+This is a description of the dummy package.
