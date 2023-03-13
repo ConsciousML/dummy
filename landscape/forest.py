@@ -1,4 +1,4 @@
-from landscape.tree import Tree
+from landscape.component.tree import Tree
 
 class Forest:
     def __init__(self) -> None:
