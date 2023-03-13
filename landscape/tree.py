@@ -14,8 +14,3 @@ class Tree:
                 tree_shape += ' '
             tree_shape += ' '.join([self.leaf_char for _ in range(row + 1)]) + '\n'
         return tree_shape
-
-
-if __name__ == '__main__':
-    t = Tree(5, '*')
-    print(t)
