@@ -1,9 +1,10 @@
 from math import ceil
 
-class Tree:
+from landscape.component.abstract import Component
+
+class Tree(Component):
     def __init__(self, width, char):
-        self.width = width
-        self.char = char
+        super().__init__(width, char)
 
     def __str__(self) -> str:
         tree_shape = ''

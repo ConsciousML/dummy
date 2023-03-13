@@ -1,8 +1,9 @@
-class Rock:
+from landscape.component.abstract import Component
+
+class Rock(Component):
     def __init__(self, width, height, char):
-        self.width = width
+        super().__init__(width, char)
         self.height = height
-        self.char = char
 
     def __str__(self) -> str:
         rock_str = ''
