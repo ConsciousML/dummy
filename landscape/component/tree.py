@@ -1,12 +1,20 @@
+"""Tree component"""
 from math import ceil
 
 from landscape.component.abstract import Component
 
 class Tree(Component):
-    def __init__(self, width, char):
+    """This class defines a tree component of the landscape"""
+    def __init__(self, width: int, char: str) -> None:
+        """
+        Args:
+            width (int): width of the tree.
+            char (str): character to print the tree.
+        """
         super().__init__(width, char)
 
     def __str__(self) -> str:
+        """Return a string representation of the tree"""
         tree_shape = ''
 
         half_width = ceil(self.width / 2)
